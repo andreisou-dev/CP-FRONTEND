@@ -94,6 +94,7 @@ body {
 .hero-imagem {
   border: solid 2px var(--sky);
   border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 .secao-busca {
@@ -236,4 +237,49 @@ body {
     margin: 0 auto;
     line-height: 1.8;
     opacity: 0.85;
+}
+
+.secao-sobre {
+    width: 900px;
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-lg);
+    padding: 3rem;
+    margin: 2rem auto 4rem auto;
+    box-shadow: 0 4px 18px rgba(15, 61, 110, 0.06);
+}
+
+.sobre-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.sobre-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--sky);
+    position: relative;
+    width: fit-content;
+}
+
+.sobre-titulo::after {
+    content: '';
+    width: 60%;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 999px;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.sobre-paragrafo {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.sobre-paragrafo strong {
+    color: var(--sky);
 }
