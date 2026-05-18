@@ -4,63 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripWay</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" href="/images/plane-solid-full.svg">
+    <link rel="stylesheet" href="">
 </head>
+
 <body>
+<nav class="navegacao">
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="/pages/destinos.html">Destinos</a></li>
+        <li><a href="/pages/pacotes.html">Pacotes</a></li>
+        <li><a href="/pages/contato.html">Contato / Reserva</a></li>
+    </ul>
+</nav>
 
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="/pages/destinos.html">Destinos</a></li>
-            <li><a href="/pages/pacotes.html">Pacotes</a></li>
-            <li><a href="/pages/contato.html">Contato / Reserva</a></li>
-        </ul>
+<main class="conteudo-principal">
 
-    <main>
+    <section class="secao-hero">
+        <h1 class="hero-titulo">TripWay</h1>
+        <h2 class="hero-subtitulo">Realize seus sonhos ao redor do mundo</h2>
+        <img class="hero-imagem" src="https://img.freepik.com/fotos-premium/aviao-no-ceu-ao-por-do-sol-generative-ai_791316-6117.jpg" alt="Avião por do sol">
+    </section>
 
-        <section>
-
-            <h1>TripWay</h1>
-            <h2 style=>Realize seus sonhos ao redor do mundo</h2>
-            <img src="https://img.freepik.com/fotos-premium/aviao-no-ceu-ao-por-do-sol-generative-ai_791316-6117.jpg" alt="Avião por do sol">
-        </section>
+    <section class="secao-busca">
         
+        <h2 class="busca-titulo">O que está buscando?</h2>
+        
+        <select class="busca-select" name="opcoes" id="opcoes">
+            <option value="1">Check-in</option>
+            <option value="2">Reservar voo</option>
+            <option value="3">Reservar hospedagem</option>
+            <option value="4">Status do voo</option>
+        </select>
+        <button class="busca-btn">Abrir opção &rarr;</button>
+    </section>
 
-            <section>
-            <h2>O que está buscando?</h2>
-            <select name="opcoes" id="opcoes">
-                <li><option value="1">Check-in</option></li>
-                <li><option value="2">Reservar voo</option></li>
-                <li><option value="3">Reservar hospedagem</option></li>
-                <li><option value="4">Status do voo</option></li>
-            </select>
-            <footer>[ABRIR OPÇÃO]</footer>
+    <section class="secao-destinos">
+        <h2 class="destinos-titulo">Qual será seu próximo destino nacional?</h2>
+        <ul class="destinos-lista">
+            <li class="destino-item"><a href="">Rio de Janeiro</a></li>
+            <li class="destino-item"><a href="">São Paulo</a></li>
+            <li class="destino-item"><a href="">Salvador</a></li>
+        </ul>
+    </section>
 
-        </section>
+</main>
 
-        <section>
-
-            <h2>Qual será seu próximo destino nacional?</h2>
-
-            <ul>
-                <li style="cursor: pointer;"><a href=""></a>Rio de Janeiro</li>
-                <li style="cursor: pointer;"><a href=""></a>São Paulo</li>
-                <li style="cursor: pointer;"><a href=""></a>Salvador</li>
-
-            </ul>
-
-
-
-
-        </section>
-
-        </nav>
-
-    </main>
-
-    <footer>
-         <p>2026 TripWay</p>
-         <p>Nós da TripWay facilitamos voos nacionais de forma prática, rápida e acessível, conectando você aos melhores destinos do Brasil <br> Oferecemos opções flexíveis, preços competitivos e suporte em todas as etapas da sua viagem, garantindo uma experiência simples, segura e eficiente do início ao fim!</p>
-    </footer>
+<footer class="rodape">
+    <p class="rodape-marca">2026 TripWay</p>
+    <p class="rodape-descricao">Nós da TripWay facilitamos voos nacionais de forma prática, rápida e acessível, conectando você aos melhores destinos do Brasil. Oferecemos opções flexíveis, preços competitivos e suporte em todas as etapas da sua viagem, garantindo uma experiência simples, segura e eficiente do início ao fim!</p>
+</footer>
 
     
 </body>
