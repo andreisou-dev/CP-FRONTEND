@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap');
+
+.contato-main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.contato-header {
+  margin-bottom: 2rem;
+}
+
+.contato-titulo {
+  font-family: 'Playfair Display', serif;
+  color: var(--sky);
+  font-size: 2rem;
+}
+
+.contato-secao {
+  background: var(--white);
+  border-radius: 20px;
+  border: 1px solid #c5daf5;
+  padding: 2.5rem;
+}
+
+/* FORM */
+.contato-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-grupo-esquerda,
+.form-grupo-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* LABELS */
+.contato-form label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--sky);
+  margin-bottom: 0.25rem;
+}
+
+/* INPUTS, SELECT, TEXTAREA */
+.contato-form input,
+.contato-form select,
+.contato-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: var(--sky-light);
+  border: 1.5px solid #c5daf5;
+  border-radius: 10px;
+  transition: border-color 0.2s;
+  appearance: none;
+}
+
+.contato-form input:focus,
+.contato-form select:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: var(--sky-mid);
+}
+
+.contato-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* BOTÃO */
+.form-btn {
+  grid-column: 1 / -1;
+  width: fit-content;
+  background-color: var(--sky);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.form-btn:hover {
+  background-color: var(--sky-mid);
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVO */
+@media (max-width: 640px) {
+  .contato-form {
+    grid-template-columns: 1fr;
+  }
+}
