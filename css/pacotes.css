@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap");
+
+.pacotes-main {
+  display: flex;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.pacotes-header {
+  margin-bottom: 2rem;
+}
