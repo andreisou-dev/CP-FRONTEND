@@ -283,3 +283,99 @@ body {
 .sobre-paragrafo strong {
     color: var(--sky);
 }
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 960px) {
+  .secao-busca {
+    width: 90%;
+  }
+
+  .secao-sobre {
+    width: 90%;
+  }
+
+  .secao-destinos {
+    width: 90%;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-titulo {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .hero-imagem {
+    width: 90%;
+    height: auto;
+  }
+
+  .secao-busca {
+    width: 90%;
+    padding: 1.5rem 1.25rem;
+    margin: 2rem auto;
+  }
+
+  .busca-select {
+    max-width: 100%;
+  }
+
+  .busca-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .secao-destinos {
+    width: 90%;
+    padding: 1.25rem;
+  }
+
+  .destinos-lista {
+    flex-direction: column;
+  }
+
+  .secao-sobre {
+    width: 90%;
+    padding: 2rem 1.25rem;
+  }
+
+  .sobre-titulo {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navegacao {
+    padding: 0 1rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    gap: 0.25rem;
+  }
+
+  .nav-links li a {
+    font-size: 13px;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .hero-titulo {
+    font-size: 1.8rem;
+  }
+
+  .sobre-titulo {
+    font-size: 1.4rem;
+  }
+
+  .sobre-paragrafo {
+    font-size: 0.95rem;
+  }
+
+  .rodape-descricao {
+    font-size: 13px;
+    padding: 0 1rem;
+  }
+}
