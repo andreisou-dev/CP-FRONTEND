@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap");
+/* ===== DESTINOS PAGE ===== */
+
+.destinos-main {
+    width: 100%;
+    max-width: 960px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== HEADER ===== */
+
+.destinos-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.destinos-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--sky);
+    margin-bottom: 0.75rem;
+}
+
+.destinos-header p {
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+/* ===== LISTA DE CARDS ===== */
+
+.destinos-lista-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ===== CARD ===== */
+
+.destino-card {
+    width: 100%;
+    background: var(--white);
+    border-radius: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 20px rgba(15, 61, 110, 0.08);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.destino-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 61, 110, 0.14);
+}
+
+/* ===== IMAGEM DO CARD ===== */
+
+.destino-card-img {
+    width: 380px;
+    min-width: 380px;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+/* ===== CORPO DO CARD ===== */
+
+.destino-card-corpo {
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.destino-card-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.9rem;
+    color: var(--sky);
+}
+
+.destino-card-descricao {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.85;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 768px) {
+    .destinos-main {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .destinos-header h1 {
+        font-size: 2.2rem;
+    }
+
+    /* Card vira coluna em mobile */
+    .destino-card {
+        flex-direction: column;
+        border-radius: 16px;
+    }
+
+    .destino-card-img {
+        width: 100%;
+        min-width: unset;
+        height: 220px;
+    }
+
+    .destino-card-corpo {
+        padding: 1.5rem;
+    }
+
+    .destino-card-titulo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .destinos-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .destino-card-img {
+        height: 180px;
+    }
+
+    .destino-card-descricao {
+        font-size: 0.95rem;
+    }
+}

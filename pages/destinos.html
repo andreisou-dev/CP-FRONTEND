@@ -1,64 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos | TripWay</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/destinos.css">
+    <link rel="icon" href="/images/plane-solid-full.svg">
 </head>
 
 <body>
-
-    <nav>
-        <a href="../index.html">TripWay</a>
-        <ul>
+    <nav class="navegacao">
+        <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a href="destinos.html">Destino</a></li>
-            <li><a href="pacotes.html">Pacotes e Serviços</a></li>
-            <li><a href="contato.html">Contato / Reserva</a></li>
+            <li><a href="/pages/destinos.html">Destinos</a></li>
+            <li><a href="/pages/pacotes.html">Pacotes</a></li>
+            <li><a href="/pages/contato.html">Contato / Reserva</a></li>
         </ul>
-
     </nav>
 
-    <main>
-        <header>
-               <h1>Guia de Destinos - TripWay</h1>
-               <p>Encontre aqui os melhores destinos de viagem do Brasil selecionados para você pela TripWay!</p>
+    <main class="destinos-main">
+        <header class="destinos-header">
+            <h1>Guia de Destinos</h1>
+            <p>Encontre os melhores destinos do Brasil selecionados para você pela TripWay</p>
         </header>
 
-        <br>
+        <section class="destinos-lista-cards">
+            <article class="destino-card">
+                <img src="/images/img-masp-sp.jpg" alt="Vista aérea da cidade de São Paulo" class="destino-card-img">
+                <div class="destino-card-corpo">
+                    <h2 class="destino-card-titulo">São Paulo</h2>
+                    <p class="destino-card-descricao">
+                        Centro financeiro do Brasil, São Paulo é uma metrópole vibrante que une negócios, cultura e inovação.
+                        Diversa e dinâmica, oferece gastronomia, arte e oportunidades únicas em cada esquina.
+                        O coração econômico do país, onde tudo acontece.
+                    </p>
+                    <button class="busca-btn">Explorar destino &rarr;</button>
+                </div>
+            </article>
 
-        <section>
-                <h2>São Paulo</h2>
-                  <img src="/images/img-masp-sp.jpg" alt="Imagem da capital de São Paulo" width="500" height="250">
-                  <p>Centro financeiro do Brasil, São Paulo é uma metrópole vibrante que une negócios, cultura e inovação.<br>
-                     Diversa e dinâmica, oferece gastronomia, arte e oportunidades únicas em cada esquina.
-                     O coração econômico do país, onde tudo acontece.</p>
+            <article class="destino-card">
+                <img src="/images/rj.jpg" alt="Vista do Rio de Janeiro com o Cristo Redentor" class="destino-card-img">
+                <div class="destino-card-corpo">
+                    <h2 class="destino-card-titulo">Rio de Janeiro</h2>
+                    <p class="destino-card-descricao">
+                        Cidade maravilhosa que encanta com suas praias, montanhas e paisagens icônicas.
+                        O Rio de Janeiro combina natureza exuberante, cultura vibrante e um estilo de vida único.
+                        Um dos destinos mais famosos do mundo, cheio de energia e beleza.
+                    </p>
+                    <button class="busca-btn">Explorar destino &rarr;</button>
+                </div>
+            </article>
 
-                  <br>
-
-                <h2>Rio de Janeiro</h2>
-                <img src="/images/rj.jpg" alt="Imagem do Rio de Janeiro" width="500" height="250">
-                <p>Cidade maravilhosa que encanta com suas praias, montanhas e paisagens icônicas.
-                   O Rio de Janeiro<br> combina natureza exuberante, cultura vibrante e um estilo de vida único.
-                   Um dos destinos mais famosos do mundo, cheio de energia e beleza.</p>
-
-                  <br>
-
-                <h2>Bahia</h2>
-                <img src="/images/ba.jpg" alt="Imagem da Bahia" width="500" height="250">
-                <p>Berço da cultura afro-brasileira, Salvador encanta com sua história, música e culinária marcante.<br>
-                   Entre o Pelourinho e suas praias, a cidade respira tradição, alegria e diversidade.
-                   Um destino vibrante onde cultura e beleza se encontram.</p>
+            <article class="destino-card">
+                <img src="/images/ba.jpg" alt="Vista das praias e do centro histórico da Bahia" class="destino-card-img">
+                <div class="destino-card-corpo">
+                    <h2 class="destino-card-titulo">Bahia</h2>
+                    <p class="destino-card-descricao">
+                        Berço da cultura afro-brasileira, Salvador encanta com sua história, música e culinária marcante.
+                        Entre o Pelourinho e suas praias, a cidade respira tradição, alegria e diversidade.
+                        Um destino vibrante onde cultura e beleza se encontram.
+                    </p>
+                    <button class="busca-btn">Explorar destino &rarr;</button>
+                </div>
+            </article>
         </section>
     </main>
-      
-    <footer>2026 TripWay</footer>
 
+    <footer class="rodape">
+        <p class="rodape-marca">2026 TripWay</p>
+        <p class="rodape-descricao">
+            Nós da TripWay facilitamos voos nacionais de forma prática, rápida e
+            acessível, conectando você aos melhores destinos do Brasil. Oferecemos
+            opções flexíveis, preços competitivos e suporte em todas as etapas da
+            sua viagem, garantindo uma experiência simples, segura e eficiente do
+            início ao fim!
+        </p>
+    </footer>
 </body>
-
 </html>
-
-
-
-
-
